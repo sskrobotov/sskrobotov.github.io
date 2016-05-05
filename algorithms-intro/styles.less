@@ -1,0 +1,329 @@
+@import "../libs/font-awesome/less/font-awesome";
+@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700,400italic);
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.icon(@i) {
+  &:before {
+    .fa;
+    width: 1.2em;
+    content: @i;
+  }
+}
+
+.lower h1 {
+  margin-bottom: 2em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.check {
+  .icon(@fa-var-check-circle);
+  &:before {
+    color: green;
+  }
+}
+
+.row {
+  .clearfix;
+}
+
+body {
+  font-family: 'Droid Serif';
+}
+
+h1, h2, h3 {
+  font-family: 'Yanone Kaffeesatz';
+  font-weight: normal;
+}
+
+.remark-code, .remark-inline-code {
+  font-family: 'Ubuntu Mono';
+  background: none;
+}
+
+code {
+  border-radius: 5px;
+}
+
+.footnote {
+  display: block;
+  position: absolute;
+  bottom: 3em;
+  color: gray;
+  font-size: 0.7em;
+}
+
+.remark-slide-content {
+  &.title {
+    background-image: url("b2-80.png");
+  }
+  background-image: url("b2-5.png");
+  background-repeat: no-repeat;
+  background-position: center center !important;
+  background-size: cover !important;
+}
+
+.left-column {
+  width: 40%;
+  height: 92%;
+  float: left;
+}
+
+.right-column {
+  width: 60%;
+  float: right;
+}
+
+pre {
+  margin-top: 0;
+}
+
+#fullscreen {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 100px;
+  z-index: 1000;
+}
+
+.check-list {
+  ul {
+    list-style: none;
+    li {
+      .icon(@fa-var-check-circle);
+      &:before {
+        color: green;
+        margin-left: -1.2em;
+      }
+    }
+  }
+}
+
+.remark-code {
+  line-height: 1.3em;
+}
+
+.remark-slide-content {
+
+  .left-column ul {
+    margin-top: 0;
+    color: #777;
+    li:last-of-type {
+      color: #000;
+    }
+  }
+  .right-column ul {
+    margin-top: 0;
+  }
+
+  ul {
+    margin-top: 5em;
+
+    ul {
+      margin-top: 0;
+      font-size: 0.5em;
+      color: gray;
+      list-style-type: none;
+
+      li {
+        margin-top: 1em;
+        margin-left: 1.5em;
+
+        &:before {
+          .fa;
+          width: 1.2em;
+          content: '—';
+          margin-left: -1.2em;
+        }
+      }
+    }
+  }
+  li {
+    font-size: 1.5em;
+    margin-top: 2em;
+  }
+}
+
+.ll {
+  .clearfix;
+  display: block;
+  img {
+    margin-top: 80px;
+    margin-left: 50px;
+    width: 700px;
+  }
+}
+
+.math {
+  .clearfix;
+  display: block;
+}
+
+.isqrt {
+
+  .math {
+    height: 70px;
+  }
+
+  .left-column {
+    h3 {
+      margin-top: 0.5em;
+    }
+  }
+
+  .im {
+    .clearfix;
+    display: block;
+    img {
+      margin-top: 30px;
+      margin-left: 20px;
+      width: 700px;
+    }
+  }
+}
+
+.asymptotic {
+  .math {
+    display: table-cell;
+    width: 500px;
+    vertical-align: middle;
+    text-align: center;
+    height: 100px;
+    font-size: 1.2em;
+  }
+  .left-column {
+    h3 {
+      display: table-cell;
+      vertical-align: middle;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 100px;
+    }
+  }
+}
+
+.bigo {
+  .row {
+    height: 80px;
+  }
+  .math {
+    display: block;
+    width: 500px;
+    text-align: center;
+    height: 80px;
+    font-size: 1.2em;
+  }
+  .left-column {
+    h3 {
+      display: table-cell;
+      vertical-align: middle;
+      margin-top: 0;
+      margin-bottom: 0;
+      height: 80px;
+    }
+  }
+
+  h2 .math {
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    font-size: 0.8em;
+
+    div {
+      margin: 20px;
+      font-size: 1em;
+    }
+  }
+}
+
+.bigo-more {
+  .row {
+    margin-top: 50px;
+  }
+}
+
+.avi {
+  .row {
+    margin-bottom: 50px;
+  }
+  .left-column {
+    h3 {
+      margin: 0;
+    }
+  }
+  .right-column {
+    ul {
+      margin: 10px 0 0 0;
+    }
+    li {
+      margin-bottom: 20px;
+      margin-top: 0;
+      font-size: 1em;
+    }
+  }
+}
+
+.bb {
+  .right-column {
+    ul {
+      margin: 60px 0 50px 0;
+
+      ul {
+        margin: 0;
+        font-size: 1em;
+      }
+    }
+    li {
+      font-size: 1em;
+    }
+  }
+}
+
+.doa {
+  .right-column {
+    .remark-code {
+      margin-top: 50px;
+    }
+  }
+}
+
+.dosll {
+  .left-column {
+    li {
+      font-size: 1em;
+    }
+  }
+  .right-column {
+    .remark-code {
+      margin-top: 40px;
+    }
+  }
+}
+
+.adts {
+  .ll img {
+    margin-top: 0;
+    margin-left: 20px;
+  }
+}
+
+
+.plot img {
+  width: 100%;
+}
