@@ -54,8 +54,7 @@ The talk is gonna cover
 Last thing before we move on to the actual content is quick note about terminology. 
 The term 'algorithm' is overused and may mean pretty much anything depending on the context. 
 Although there might be some formal definitions used in the various sources, the reality is 
-that those definitions are not followed, so in this talk I'll grant myself permission to 
-use the term anywhere I see fit :)
+that those definitions are not followed.
 
 Data Structures however mostly make sense in application to programming, working with memory,
 and program data organization but it still happens that several things are called DS 
@@ -66,10 +65,6 @@ even though their formal deffinitions are different.
 class: title, center, middle
 
 # Algorithms
-
-???
-
-Okay, that's it, let's move on to the actual content
 
 ---
 
@@ -131,7 +126,7 @@ int isAnswer(long n,  long x) {
 
 Let's start off with an example: find an integer square root of N.
 
-So given an input (integer number N) we want to come up with a list of steps that would produce an output that would be an answer to our question.
+Given an input (integer number N) we want to come up with a list of steps that would produce an output that would be an answer to our question.
 
 First observation: if we're given a number x, we can check if x is an answer:
 - x squared should be less or equal to N
@@ -289,8 +284,6 @@ class: asymptotic, lower
 - Most commonly used asymptotic notation
 - 'Order of magnitude' for functions
 - Defines an *asymptotic upper bound*
-
-???
 
 ---
 
